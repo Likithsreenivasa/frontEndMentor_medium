@@ -1,0 +1,232 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html
+{
+    min-height: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: black;
+}
+.svg-container{
+    width:200px;
+    /* height: 200px; */
+    position: relative;
+    /* left: 560px;
+    top: 110px;
+    color: rgb(167, 117, 242);
+    opacity: 0.5; */
+    /* padding-bottom: 100%; */
+    /* width: 100%; */
+}
+.svg-content
+{
+    position: absolute;
+    left:15vh;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+
+}
+.container
+{
+    margin: 0 10rem;
+    width: calc(100%-20rem);
+    height: 130vh;
+    display: flex;
+    background-color: rgb(237, 242, 248);
+    align-items: center;
+    justify-content: center;
+}
+.grid-container
+{
+     width:65vw;
+    height: 75vh; 
+    /* background-color: bisque; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "item-1 item-1 item-2 item-5"
+    "item-3 item-4 item-4 item-5" ;
+    gap: 1rem;
+}
+.grid-container > *
+{
+    border-radius: 10px;
+
+    /* font-size: 10px; */
+    
+}
+
+.grid-container  img
+{
+    position: absolute;
+    width: 30px;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    border-radius: 50%;
+}
+.Verified_graduate
+{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 3.5rem;
+    padding-top: 1rem;
+    color: #D7B3FF;
+}
+.veri_1
+{
+    display: block;
+    padding-left: 3.5rem;
+    opacity: 0.8;
+    color: #996CDE;
+    font-size: 10px;
+}
+/* .item-1 .veri_1
+{
+    padding-left: 2.90rem;
+}
+.item-4 .veri_1 {
+    padding-left: 2.8rem;
+} */
+.item-1
+{
+    /* margin-left: 1rem; */
+    grid-area: item-1;
+    background-color: #733FC8;
+    padding-bottom: 1rem;
+
+}
+.item-2 {
+    grid-area: item-2;
+    background-color: #48566A;
+    
+}
+.item-3 {
+    grid-area: item-3;
+    background-color: #FFFFFF;
+
+}
+.item-4 {
+    grid-area: item-4;
+    background-color: #18202D;
+    padding-bottom: 1rem;
+}
+.item-5 {
+    grid-area: item-5;
+    background-color: #FFFFFF;
+}
+.grid-container footer *
+{
+    font-size: 10px;
+}
+.body
+{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.01px;
+    color: #FBE9FF;
+
+}
+.foot
+{
+    /* padding-left: 0.1rem;
+    padding-top: 0.5rem; */
+    letter-spacing: 0.01px;
+    font-size: 11px;
+    padding: 0 1rem;
+    line-height: 18px;
+    color: #9C76D8;
+}
+.body-5
+{
+    color: #4F5969;
+}
+.item-5 .Verified_graduate,.body-5,.item-3 .Verified_graduate,.body-3
+{
+    color: #5A6170;
+}
+.body-4
+{
+    color: #EFF5FF;
+}
+.item-4 .Verified_graduate 
+{
+    color: #E8EEFA;
+}
+.item-5 .foot,.item-3 .foot{
+    color: #B0B3B7;
+}
+.item-4 .foot,.veri_1
+{
+    color: #979DA7;
+}
+.item-2 .foot{
+    color: #A2ACB9;
+}
+@media (max-width:888px) {
+    *
+    {
+        margin: 0;
+        padding: 0;
+        
+       
+    }
+    body,html
+    {
+        /* min-width:100%; */
+        min-height: 100%;
+        min-width: 100%;
+        background-color: #EDF2F8;
+       
+        
+    }
+    .container
+    {
+        width: 80vw;
+        height: 85vh;
+        display: flex;
+        /* align-content: center; */
+        justify-items: center;
+        /* justify-content: center; */
+        align-items: center;
+        
+    }
+    .grid-container
+    {
+        width: 95vw;
+        height: 85vh;
+        display: grid;
+        grid-template-rows: repeat(1fr,5);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "item-1 item-1 item-1 item-1"
+        "item-1 item-1 item-1 item-1"
+        "item-2 item-2 item-2 item-2"
+        "item-3 item-3 item-3 item-3"
+        "item-4 item-4 item-4 item-4"
+        "item-4 item-4 item-4 item-4"
+        "item-5 item-5 item-5 item-5"
+        "item-5 item-5 item-5 item-5";
+        
+    }
+    .grid-container > *
+    {
+        padding-bottom: 2rem;
+        grid-row: span 8;
+    }
+    .item-5
+    {
+        background-color: #FFFFFF;
+    }
+
+    
+}
